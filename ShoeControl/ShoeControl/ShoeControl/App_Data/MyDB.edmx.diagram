@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="620361e024b6427c8bb4e4044c137c99" Name="Diagram1">
+        <EntityTypeShape EntityType="RoleBaseAccessibilityModel1.ArchiveProduct" Width="1.5" PointX="8.25" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoleBaseAccessibilityModel1.Category" Width="1.5" PointX="3.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoleBaseAccessibilityModel1.Inventory" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoleBaseAccessibilityModel1.Login" Width="1.5" PointX="11" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoleBaseAccessibilityModel1.Product" Width="1.5" PointX="6" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoleBaseAccessibilityModel1.Role" Width="1.5" PointX="8.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoleBaseAccessibilityModel1.StoreLocation" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoleBaseAccessibilityModel1.Supplier" Width="1.5" PointX="3.75" PointY="7.75" IsExpanded="true" />
+        <AssociationConnector Association="RoleBaseAccessibilityModel1.FK__ArchivePr__Produ__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="RoleBaseAccessibilityModel1.FK__Products__Catego__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="RoleBaseAccessibilityModel1.FK__Inventory__Produ__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="RoleBaseAccessibilityModel1.FK__Inventory__Store__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="RoleBaseAccessibilityModel1.R_10" ManuallyRouted="false" />
+        <AssociationConnector Association="RoleBaseAccessibilityModel1.FK__Products__StoreL__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="RoleBaseAccessibilityModel1.FK__Products__Suppli__412EB0B6" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

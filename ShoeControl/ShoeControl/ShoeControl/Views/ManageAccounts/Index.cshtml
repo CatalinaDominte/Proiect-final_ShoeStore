@@ -1,0 +1,61 @@
+﻿@model IEnumerable<ShoeControl.Models.Products.ManageAcountsViewModel>
+    <p>
+        <div>
+
+        </div>
+        <h1></h1>
+        <h1></h1>
+    </p>
+<caption><p>
+    @Html.ActionLink("Create New", "Create")
+</p></caption>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Username)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Password)
+        </th>
+        
+        <th></th>
+    </tr>
+
+@foreach (var item in Model)
+{
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Username)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Password)
+    </td>
+    
+
+   
+    
+        <td>
+            @if (Convert.ToInt32(this.Session["role_id"]) == 1)
+            {
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+            }
+            |
+
+            @if (Convert.ToInt32(this.Session["role_id"]) == 1 && item.Role_id!=1)
+            {
+                 
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { onclick = "return confirm('Are you sure you want to delete?');" })
+            }
+
+
+
+
+        </td>
+    
+
+
+
+</tr>
+}
+
+</table>
